@@ -78,7 +78,7 @@ body {
 
 /* header */
 .header {
-    width: 100vw;
+    width: 100%;
     background-color: var(--second-color);
 }
 
@@ -124,7 +124,7 @@ body {
 
 /* hero */
 .hero {
-    width: 100vw;
+    width: 100%;
     padding: 3rem 0 5rem 0;
     background: var(--second-color);
     margin-bottom: 5rem;
