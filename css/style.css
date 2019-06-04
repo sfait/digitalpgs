@@ -1,0 +1,10 @@
+* {
+    box-sizing: border-box;
+}
+
+.wrapper {
+    width: 85%;
+    max-width: 1250px;
+    margin: 0 auto;
+    font-family: 'Poppins', sans-serif;
+}
