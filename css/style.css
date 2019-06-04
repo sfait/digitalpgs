@@ -15,7 +15,7 @@
 }
 
 .wrapper {
-    width: 85%;
+    width: 80%;
     max-width: 1250px;
     margin: 0 auto;
     font-family: 'Poppins', sans-serif;
@@ -121,13 +121,12 @@
 /* hero */
 .hero {
     width: 100vw;
+    padding: 3rem 0 5rem 0;
     background: var(--second-color);
-    margin-bottom: 2rem;
+    margin-bottom: 5rem;
 }
 
 .hero-wrapper {
-    width: 100%;
-    padding: 5rem 0;
     color: var(--base-color);
     text-align: center;
     display: flex;
@@ -143,6 +142,7 @@
 }
 
 .hero-paragraph {
+    width: 100%;
     line-height: 2;
     margin-bottom: 3rem;
 }
@@ -161,6 +161,71 @@
     background: var(--fourth-color);
 }
 
+/* about-us */
+.about-us {
+    margin-bottom: 5rem;
+}
+
+.about-us-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    animation: show 3s ease-in;
+}
+
+.info {
+    width: 100%;
+    padding-right: 0;
+}
+
+.third-header {
+    margin: 0;
+    font-size: 1.5rem;
+    position: relative;
+}
+
+.third-header::after {
+    content: "";
+    width: 30%;
+    border: 2px solid var(--fourth-color);
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+}
+
+.third-header:hover::after {
+    animation: stretch 3s ease-in;
+}
+
+.info-paragraph {
+    margin-top: 2.5rem;
+    line-height: 1.5;
+}
+
+.competences {
+    width: 100%;
+    padding-left: 0;
+    line-height: 2;
+}
+
+.competences-list {
+    list-style: none;
+}
+
+.competences-list li {
+    position: relative;
+}
+
+.competences-list li::after {
+    content: "➪";
+    font-size: 1.5rem;
+    color: var(--fourth-color);
+    position: absolute;
+    bottom: -5px;
+    left: -30px;
+}
+
 /* media queries*/
 @media only screen and (min-width: 740px) {
     /* header */
@@ -174,8 +239,23 @@
     }
 
     /* hero */
-    .hero-wrapper {
+    .hero-paragraph {
         width: 60%;
+    }
+
+    /* about-us */
+    .about-us-wrapper {
+        flex-direction: row;
+    }
+
+    .info {
+        width: 50%;
+        padding-right: 4rem;
+    }
+
+    .competences {
+        width: 50%;
+        padding-left: 5rem;
     }
 }
 
@@ -186,5 +266,14 @@
     }
     100% {
         opacity: 1;
+    }
+}
+
+@keyframes stretch {
+    0% {
+        width: 30%;
+    }
+    100% {
+        width: 80%;
     }
 }
