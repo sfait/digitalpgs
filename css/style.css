@@ -152,14 +152,13 @@
     color: var(--second-color);
     background: var(--base-color);
     text-decoration: none;
-    border: 2px solid var(--base-color);
     border-radius: 5px;
-    transition: color 0.5s;
+    transition: color 0.5s, background 1s;
 }
 
 .hero-btn:hover {
-    color: var(--fourth-color);
-    border-color: var(--fourth-color);
+    color: var(--base-color);
+    background: var(--fourth-color);
 }
 
 /* media queries*/
