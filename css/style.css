@@ -371,8 +371,8 @@ body {
     transition: color 0.5s;
 }
 
-.social-icons a:first-of-type {
-    margin-right: 1rem;
+.social-icons a:nth-last-of-type(2) {
+    margin: 0 1rem;
 }
 
 .social-icons a:hover {
