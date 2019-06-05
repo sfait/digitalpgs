@@ -26,6 +26,20 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+.sr-only {
+    border: 0 !important;
+    clip: rect(1px, 1px, 1px, 1px) !important;
+    -webkit-clip-path: inset(50%) !important;
+    clip-path: inset(50%) !important;
+    height: 1px !important;
+    overflow: hidden !important;
+    margin: -1px !important;
+    padding: 0 !important;
+    position: absolute !important;
+    width: 1px !important;
+    white-space: nowrap !important;
+}
+
 /* starter-page */
 .starter-page {
     width: 100vw;
@@ -252,6 +266,37 @@ body {
     line-height: 2;
 }
 
+/* footer */
+.footer {
+    width: 100%;
+    padding: 1rem 0;
+    background: var(--second-color);
+}
+
+.footer-wrapper {
+    color: var(--base-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    animation: show 3s ease-in;
+}
+
+.social-icons a {
+    color: var(--base-color);
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.social-icons a:first-of-type {
+    margin-right: 1rem;
+}
+
+.social-icons a:hover {
+    color: var(--fifth-color);
+}
+
 /* media queries*/
 @media only screen and (min-width: 740px) {
     /* header */
@@ -296,6 +341,11 @@ body {
     /* process */
     .process {
         margin-bottom: 10rem;
+    }
+
+    /* footer */
+    .footer-wrapper {
+        flex-direction: row;
     }
 }
 
