@@ -200,8 +200,13 @@ body {
 
 .third-header {
     margin: 0;
+    text-align: center;
     font-size: 1.5rem;
     position: relative;
+}
+
+.about-us-header {
+    text-align: left;
 }
 
 .about-us-header:after {
@@ -249,7 +254,6 @@ body {
 .process {
     padding: 5rem 0;
     background: var(--second-color);
-    margin-bottom: 5rem;
 }
 
 .process-wrapper {
@@ -264,6 +268,54 @@ body {
 .process-list {
     margin-top: 2rem;
     line-height: 2;
+}
+
+/* team */
+.team {
+    width: 100%;
+    padding: 1rem 0 5rem 0;
+    background: var(--second-color);
+}
+
+.team-wrapper {
+    color: var(--base-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.members-box {
+    width: 100%;
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.member {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.member img {
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.member p {
+    line-height: 1.5;
+}
+
+.member-name {
+    color: var(--sixth-color);
+    margin-bottom: 0.5rem;
 }
 
 /* arrow back-to-top */
@@ -357,9 +409,13 @@ body {
         padding-left: 5rem;
     }
 
-    /* process */
-    .process {
-        margin-bottom: 10rem;
+    /* team */
+    .members-box {
+        flex-direction: row;
+    }
+
+    .member {
+        width: 25%;
     }
 
     /* arrow back-to-top */
