@@ -266,6 +266,25 @@ body {
     line-height: 2;
 }
 
+/* arrow back-to-top */
+.back-to-top-wrapper {
+    padding: 2rem 0;
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.back-to-top {
+    color: var(--second-color);
+    transition: color 0.5s;
+    animation: show 3s ease-in;
+}
+
+.back-to-top:hover {
+    color: var(--fifth-color);
+}
+
 /* footer */
 .footer {
     width: 100%;
@@ -341,6 +360,11 @@ body {
     /* process */
     .process {
         margin-bottom: 10rem;
+    }
+
+    /* arrow back-to-top */
+    .back-to-top-wrapper {
+        justify-content: flex-end;
     }
 
     /* footer */
