@@ -302,7 +302,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
 }
 
 .member img {
@@ -329,9 +329,97 @@ body {
     color: var(--fifth-color);
 }
 
+/* contact */
+.contact {
+    margin-bottom: 1rem;
+}
+
+.third-header-contact {
+    margin: 3rem 0 1rem 0;
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    animation: show 3s ease-in;
+}
+
+.contact-wrapper {
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    animation: show 3s ease-in;
+}
+
+.form {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.form label {
+    padding: 1.5rem 0 0.5rem 0;
+}
+
+.form label:first-of-type {
+    padding-top: 0;
+}
+
+.form input {
+    width: 80%;
+}
+
+.message {
+    width: 80%;
+    height: 20vh;
+    margin-bottom: 2rem;
+    resize: vertical;
+}
+
+.submit {
+    padding: 0.6rem 2.5rem;
+    font-size: 1rem;
+    color: var(--base-color);
+    background: var(--sixth-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 1s;
+}
+
+.submit:hover {
+    background: var(--fourth-color);
+}
+
+.contact-info {
+    width: 100vw;
+    padding: 2.5rem 0;
+    position: relative;
+}
+
+.contact-info::after {
+    content: "";
+    height: 100%;
+    border: none;
+    position: absolute;
+    top: 0;
+    left: -2rem;
+}
+
+.contact-info p {
+    margin: 0;
+    line-height: 2;
+    font-style: normal;
+}
+
+.contact-info a {
+    color: var(--second-color);
+    text-decoration: none;
+}
+
 /* arrow back-to-top */
 .back-to-top-wrapper {
-    padding: 2rem 0;
+    padding: 1rem 0 2rem 0;
     font-size: 3rem;
     display: flex;
     align-items: center;
@@ -427,6 +515,23 @@ body {
 
     .member {
         width: 25%;
+    }
+
+    /* contact */
+    .contact-wrapper {
+        flex-direction: row;
+    }
+
+    .form {
+        width: 70vw;
+    }
+
+    .contact-info {
+        width: 30vw;
+    }
+
+    .contact-info::after {
+        border: 0.5px solid var(--fourth-color);
     }
 
     /* arrow back-to-top */
