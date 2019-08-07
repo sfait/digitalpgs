@@ -140,6 +140,7 @@ body {
 
 .hero-wrapper img {
     width: 70%;
+    max-width: 500px;
     margin-bottom: 1rem;
 }
 
@@ -249,48 +250,36 @@ body {
 /* team */
 .team {
     width: 100%;
-    padding: 1rem 0 5rem 0;
+    padding: 1rem 0 8rem 0;
     background: var(--second-color);
 }
 
 .team-wrapper {
     color: var(--base-color);
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-animation: show 3s ease-in;
-            animation: show 3s ease-in;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    animation: show 3s ease-in;
+}
+
+.members-header {
+    margin-top: 2rem;
 }
 
 .members-box {
     width: 100%;
-    margin-top: 3rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
+    margin-top: 2rem;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
 }
 
 .member {
     width: 100%;
+    margin: 2rem 2rem 0 0;
     text-align: center;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -305,7 +294,6 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin-bottom: 2rem;
 }
 
 .member img {
@@ -313,18 +301,30 @@ body {
     margin-bottom: 1rem;
 }
 
-.member p {
-    line-height: 2;
-}
-
 .member-name {
     color: var(--sixth-color);
+    text-transform: uppercase;
     margin-bottom: 0.5rem;
 }
 
+.member-name-boss {
+    color: var(--fifth-color);
+}
+
+.member-status {
+    width: 90%;
+    line-height: 1.5;
+}
+
+.member-social-icons {
+    margin-top: 1rem;
+}
+
 .member-social-icons a {
+    margin: 0 0.5rem;
     font-size: 1rem;
     color: var(--base-color);
+    text-decoration: none;
     -webkit-transition: color 0.5s;
     -o-transition: color 0.5s;
     transition: color 0.5s;
@@ -564,14 +564,11 @@ body {
 
     /* team */
     .members-box {
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: row;
-                flex-direction: row;
+        flex-direction: row;
     }
 
     .member {
-        width: 25%;
+        width: 200px;
     }
 
     /* contact */
@@ -625,22 +622,5 @@ body {
     }
     100% {
         opacity: 1;
-    }
-}
-
-@-webkit-keyframes stretch {
-    0% {
-        width: 30%;
-    }
-    100% {
-        width: 80%;
-    }
-}
-@keyframes stretch {
-    0% {
-        width: 30%;
-    }
-    100% {
-        width: 80%;
     }
 }
