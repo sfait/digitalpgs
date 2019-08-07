@@ -152,10 +152,19 @@ body {
 
 .hero-btn-wrapper {
     line-height: 2;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 .hero-btn {
@@ -178,7 +187,8 @@ body {
 /* about-us */
 .about-us {
     margin-bottom: 3rem;
-    animation: show 3s ease-in;
+    -webkit-animation: show 3s ease-in;
+            animation: show 3s ease-in;
 }
 
 .third-header {
@@ -195,10 +205,19 @@ body {
 
 .about-us-wrapper {
     text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 .info {
@@ -256,11 +275,21 @@ body {
 
 .team-wrapper {
     color: var(--base-color);
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    animation: show 3s ease-in;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-animation: show 3s ease-in;
+            animation: show 3s ease-in;
 }
 
 .members-header {
@@ -270,11 +299,21 @@ body {
 .members-box {
     width: 100%;
     margin-top: 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 .member {
@@ -321,7 +360,7 @@ body {
 }
 
 .member-social-icons a {
-    margin: 0 0.5rem;
+    margin: 0 0.5rem 0 0;
     font-size: 1rem;
     color: var(--base-color);
     text-decoration: none;
@@ -416,7 +455,7 @@ body {
 
 .contact-info {
     width: 100vw;
-    padding: 2.5rem 0;
+    padding-right: 0.5rem;
     position: relative;
 }
 
@@ -430,7 +469,7 @@ body {
 }
 
 .contact-info p {
-    margin: 0;
+    margin: 1.5rem 0 0;
     line-height: 2;
     font-style: normal;
 }
@@ -438,6 +477,11 @@ body {
 .contact-info a {
     color: var(--second-color);
     text-decoration: none;
+}
+
+.contact-info a:hover {
+    color: var(--second-color);
+    text-decoration: underline;
 }
 
 /* arrow back-to-top */
@@ -529,7 +573,7 @@ body {
     /* hero */
     .hero {
         padding: 5rem 0 6rem;
-        margin-bottom: 5rem;
+        margin-bottom: 3rem;
     }
 
     .hero-paragraph {
@@ -564,7 +608,10 @@ body {
 
     /* team */
     .members-box {
-        flex-direction: row;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
     }
 
     .member {
@@ -580,11 +627,11 @@ body {
     }
 
     .form {
-        width: 70vw;
+        width: 60vw;
     }
 
     .contact-info {
-        width: 30vw;
+        width: 40vw;
     }
 
     .contact-info::after {
