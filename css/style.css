@@ -41,82 +41,6 @@ body {
     white-space: nowrap !important;
 }
 
-/* starter-page */
-.starter-page {
-    width: 100vw;
-    height: 100vh;
-    color: var(--base-color);
-    background: var(--second-color);
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-}
-
-.starter-page-wrapper {
-    text-align: center;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-animation: show 3s ease-in;
-            animation: show 3s ease-in;
-}
-
-.first-header {
-    margin: 0;
-    font-size: 4.5rem;
-    color: var(--base-color);
-    margin-bottom: 3.5rem;
-}
-
-.languages {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-}
-
-.language {
-    padding: 1rem;
-    font-size: 1.5rem;
-}
-
-.language:first-of-type {
-    margin-right: 2.5rem;
-}
-
-.language a {
-    color: var(--base-color);
-    text-decoration: none;
-    -webkit-transition: color 0.5s;
-    -o-transition: color 0.5s;
-    transition: color 0.5s;
-}
-
-.language a:hover {
-    color: var(--fifth-color);
-}
-
 /* header */
 .header {
     width: 100%;
@@ -184,9 +108,9 @@ body {
 /* hero */
 .hero {
     width: 100%;
-    padding: 5rem 0;
+    padding: 1rem 0 3rem;
     background: var(--second-color);
-    margin-bottom: 5rem;
+    margin-bottom: 2.5rem;
 }
 
 .hero-wrapper {
@@ -210,8 +134,13 @@ body {
 }
 
 .second-header {
-    font-size: 2rem;
-    color: var(--fourth-color);
+    font-size: 0.5rem;
+    display: none;
+}
+
+.hero-wrapper img {
+    width: 70%;
+    margin-bottom: 1rem;
 }
 
 .hero-paragraph {
@@ -220,7 +149,16 @@ body {
     margin-bottom: 3rem;
 }
 
+.hero-btn-wrapper {
+    line-height: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .hero-btn {
+    margin: 1rem 0 0;
     padding: 0.5rem 2.5rem;
     color: var(--second-color);
     background: var(--base-color);
@@ -238,25 +176,28 @@ body {
 
 /* about-us */
 .about-us {
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
+    animation: show 3s ease-in;
+}
+
+.third-header {
+    margin: 0;
+    text-align: center;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+.about-us-header {
+    margin: 0 0 1.5rem;
+    text-align: center;
 }
 
 .about-us-wrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
+    text-align: center;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-animation: show 3s ease-in;
-            animation: show 3s ease-in;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
 }
 
 .info {
@@ -264,87 +205,45 @@ body {
     padding-right: 0;
 }
 
-.third-header {
-    margin: 0;
-    text-align: center;
-    font-size: 1.5rem;
-    position: relative;
-}
-
-.about-us-header {
-    text-align: left;
-}
-
-.about-us-header:after {
-    content: "";
-    width: 30%;
-    border: 2px solid var(--fourth-color);
-    position: absolute;
-    bottom: -15px;
-    left: 0;
-}
-
-.about-us-header:hover::after {
-    -webkit-animation: stretch 3s ease-in;
-            animation: stretch 3s ease-in;
-}
-
 .info-paragraph {
-    margin-top: 2.5rem;
-    line-height: 2;
+    margin-bottom: 0.5rem;
+    line-height: 1.5;
+}
+
+.info-paragraph:last-of-type {
+    margin-bottom: 2rem;
 }
 
 .competences {
     width: 100%;
+    margin-top: 1rem;
     padding-left: 0;
-    line-height: 2;
+    line-height: 1.5;
 }
 
 .competences-list {
+    margin: 0;
+    padding: 0;
     list-style: none;
+    line-height: 1/5;
 }
 
 .competences-list li {
-    position: relative;
+    margin-top: 0.5rem;
 }
+
+.competences-list span {
+    margin-right: 0.5rem;
+}
+
 
 .competences-list li::after {
     content: "➪";
     font-size: 1.5rem;
     color: var(--fourth-color);
     position: absolute;
-    bottom: -5px;
+    bottom: -10px;
     left: -30px;
-}
-
-/* process */
-.process {
-    padding: 5rem 0;
-    background: var(--second-color);
-}
-
-.process-wrapper {
-    color: var(--base-color);
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-animation: show 3s ease-in;
-            animation: show 3s ease-in;
-}
-
-.process-list {
-    margin-top: 2rem;
-    line-height: 2;
 }
 
 /* team */
@@ -629,8 +528,8 @@ body {
 
     /* hero */
     .hero {
-        padding: 10rem 0;
-        margin-bottom: 10rem;
+        padding: 5rem 0 6rem;
+        margin-bottom: 5rem;
     }
 
     .hero-paragraph {
@@ -639,10 +538,15 @@ body {
 
     /* about-us */
     .about-us {
-        margin-bottom: 10rem;
+        margin-bottom: 5rem;
+    }
+
+    .about-us-header {
+        margin: 0 0 2rem;
     }
 
     .about-us-wrapper {
+        text-align: left;
         -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
             -ms-flex-direction: row;
@@ -650,13 +554,12 @@ body {
     }
 
     .info {
-        width: 50%;
-        padding-right: 4rem;
+        width: 65%;
+        margin-right: 4rem;
     }
 
     .competences {
-        width: 50%;
-        padding-left: 5rem;
+        width: 30%;
     }
 
     /* team */
